@@ -10,10 +10,10 @@ LEVEL 1: AI & AGENT FOUNDATIONS
 Level 1 is the beginner path. It is designed for complete beginners and does not require coding. It spans six weeks and introduces basic AI concepts, prompt writing, tools, memory, and building no-code AI agents. 
 
 LEVEL 2: AI APPLICATION & AGENT BUILDER
-Level 2 is the intermediate path. Clicking the Level 2 button currently opens the Tool Setup Guide by mistake. This level is intended to cover Python, APIs, RAG, tool calling, and evaluation.
+Level 2 is the intermediate path. This level is intended to cover Python, APIs, RAG, tool calling, and evaluation.
 
 LEVEL 3: PRODUCTION AGENTIC SYSTEMS
-Level 3 is the advanced path. Clicking the Level 3 button currently opens the "Our Approach" page by mistake. This level covers architecture, multi-agent patterns, security, and deployment.
+Level 3 is the advanced path. This level covers architecture, multi-agent patterns, security, and deployment.
 
 SECTION 3 — SIX WEEKLY LESSONS IN LEVEL 1
 
@@ -49,34 +49,12 @@ CERTIFICATION 1: AGENTICED CERTIFIED: AI & AGENT FOUNDATIONS (Beginner). Estimat
 
 CERTIFICATION 2: AGENTICED CERTIFIED: AGENT BUILDER — ASSOCIATE (Intermediate). Estimated duration: 35 minutes.
 
-CERTIFICATION 3: AGENTICED CERTIFIED: AI SAFETY & GOVERNANCE — SPECIALTY (Advanced). Estimated duration: 40 minutes. Note: This certification title currently mismatches the Level 3 course title "Production Agentic Systems".
-
-Currently, clicking "Start exam" opens the questions immediately without a pre-exam warning popup or live countdown timer. Also, the exams do not award partial marking for multiple-answer questions. 
+CERTIFICATION 3: AGENTICED CERTIFIED: AI SAFETY & GOVERNANCE — SPECIALTY (Advanced). Estimated duration: 40 minutes.
 
 SECTION 6 — FREE RESOURCES AND STUDENT SUPPORT
 
 Free resources include the Tool Setup Guide, Pacing Plan Generator, and Glossary. The platform also offers Vizz-AI Tutor, a personalized AI learning assistant, and Vizuara Pods for curated Colab notebooks. Education partners supporting the ecosystem include Google, NVIDIA, Meta, LangChain, LlamaIndex, Nebius, and OpenAI.
 
-SECTION 7 — STUDENT EXPERIENCE OBSERVATIONS
-
-A comprehensive student walkthrough and usability review of the platform revealed 12 specific issues that currently degrade the learning and testing experience:
-1. There is absolutely no partial marking awarded in multiple-choice or multiple-answer questions, meaning a student who gets two out of three checkboxes correct receives zero points, which feels highly unfair.
-2. The certificate generation process is disconnected and confusing, splitting credentials between an unverified Course Certificate page and the official exam portal.
-3. The main dashboard header navigation points completely disappear after a student clicks the Dashboard button, trapping them on inner pages.
-4. Questions in the exam question bank can be easily highlighted, copied, and pasted into external AI tools by students because there is no text-selection restriction.
-5. The Level 3 course is titled "Production Agentic Systems" on the learning paths page, but the third certificate is confusingly named "AI Safety & Governance".
-6. Button redirects on the main page are completely broken: clicking Level 2 opens the Tool Setup Guide, and clicking Level 3 incorrectly opens the Our Approach page.
-7. Anyone visiting the site can instantly generate an unverified certificate directly from the Course Certificate .html page by just typing their name.
-8. There is no active countdown timer displayed during the examination, and there is no warning popup before the exam starts, causing students to accidentally begin tests.
-9. There is no proper study schedule provided for each module based on its varying length and technical difficulty.
-10. There is no direct menu option on the Certifications pages to go straight back to the main AgenticEd website sections.
-11. The standard website footer is missing or incomplete on many inner pages, preventing students from finding help links.
-12. There is no central student login system to save progress across devices; all course progress is currently stored locally in the web browser, meaning switching from a computer to a phone resets everything to zero.
-
-SECTION 8 — IMPORTANT DISTINCTIONS FOR ANSWERING STUDENT QUESTIONS
-
-When answering student questions, chatbots must note that progress is only saved locally in the browser due to the lack of a login system. Students must be warned to distinguish between the unverified Course Certificate and the three official exam-based certifications. If information is missing, the chatbot must not invent policies or prerequisites.
-
 SECTION 9 — SOURCE REGISTER
 
-Sources include the AgenticEd Website Review & Student Observations Report, The Gen Academy (thegenacademy.com) for Live Labs and the 6-week Mastering Agentic AI curriculum, and Vizuara AI (vizuara.ai) for bootcamp structures, personalized tutors, and foundational academic models.
+Sources include The Gen Academy (thegenacademy.com) for Live Labs and the 6-week Mastering Agentic AI curriculum, and Vizuara AI (vizuara.ai) for bootcamp structures, personalized tutors, and foundational academic models.
