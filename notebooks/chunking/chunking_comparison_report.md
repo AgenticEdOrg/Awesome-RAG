@@ -1,27 +1,30 @@
 # AgenticEd: RAG Chunking Comparison Report
 
 ### Overview
-This report documents the implementation and evaluation of three distinct text-chunking strategies (**Fixed-Size**, **Sentence-Based**, and **Paragraph-Based**) applied to the AgenticEd course content (`agenticed_content.txt`). Effective chunking optimizes content retrieval and context preservation for downstream Retrieval-Augmented Generation (RAG) systems.
+This report compares three text-chunking strategies (**Fixed-Size**, **Sentence-Based**, and **Paragraph-Based**) on the AgenticEd sample content (`agenticed_content.txt`). Good chunking keeps context intact for downstream Retrieval-Augmented Generation (RAG) systems.
 
 ---
 
 ### Summary Metrics Across All Three Methods
 
-| Strategy | Total Chunks | Min Words | Max Words | Avg Words | Sentence Integrity | Paragraph Integrity |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Fixed-Size Chunking** | 10 | 37 | 180 | 97.3 | ❌ Broken (mid-sentence cuts) | ❌ Broken |
-| **Sentence-Based Chunking** | 10 | 37 | 177 | 97.3 | ✅ Fully Preserved | ⚠️ Partial (grouped by sentence) |
-| **Paragraph-Based Chunking** | 9 | 37 | 321 | 108.1 | ✅ Fully Preserved | ✅ Fully Preserved |
+| Strategy | Total Chunks | Min Words | Max Words | Avg Words | Sections Split |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Fixed-Size Chunking** | 8 | 26 | 180 | 101.9 | Section 4, mid-sentence |
+| **Sentence-Based Chunking** | 8 | 26 | 179 | 101.9 | Section 4, between sentences |
+| **Paragraph-Based Chunking** | 8 | 26 | 152 | 101.9 | Section 4, between paragraphs |
+
+The file has 6 sections. Five are shorter than the 180-word budget, so each becomes one chunk. Section 4 (the FAQ, 428 words) is longer, so each method splits it into three chunks.
 
 ---
 
 ### Key Observations from the Experiments
 
-1. **Boundary Preservation vs. Strict Sizing**:
-   * **Fixed-size chunking** enforces a rigid word ceiling (180 words), but at the cost of splitting thoughts across chunk boundaries[cite: 6, 10]. For example, in Section 7, the text was cut mid-sentence between `fixed-7` (ending with `"7. Anyone visiting the"`) and `fixed-8` (starting with `"site can instantly generate an unverified certificate..."`)[cite: 10].
-   * **Sentence-based chunking** successfully resolved mid-sentence clipping by respecting grammatical punctuation (`.`, `!`, `?`), keeping every chunk safely under the 180-word soft budget (max: 177 words)[cite: 8, 10].
-   * **Paragraph-based chunking** preserved topical unity and structural layout using double newline delimiters (`\n\n`), but resulted in an outlier in Section 7 (321 words) because the section was written as a single continuous block without blank lines[cite: 8, 10].
+1. **Fixed-size chunking cuts sentences.** Section 4 is split at exactly 180 words. That falls mid-sentence twice: "...with your discussion" / "depth." and "...they've worked" / "through the weeks...".
 
-2. **Which method is best for an AgenticEd Chatbot?**
-   * **Sentence-based chunking with a soft word budget** provides the best overall balance for general retrieval. It guarantees that retrieved context contains grammatically complete sentences without risking oversized outliers that exceed LLM context windows.
-   * For sections where multi-line formatting or structured lists are critical (such as Section 2's learning levels and Section 3's six weekly lessons), **paragraph-based chunking** is superior because it preserves structural layout and list relationships.
+2. **Sentence-based chunking keeps sentences whole.** Every break falls between sentences, and every chunk stays under the 180-word budget.
+
+3. **Paragraph-based chunking keeps paragraphs whole.** Section 4 becomes three chunks of 130, 152, and 146 words, each holding one or more complete question-and-answer pairs.
+
+4. **Which method is best for an AgenticEd Chatbot?**
+   * **Sentence-based chunking with a soft word budget** is the best overall choice for this file. It never cuts a sentence and keeps chunks under the budget.
+   * **Paragraph-based chunking** keeps each question and answer together, which suits FAQ-style content.
