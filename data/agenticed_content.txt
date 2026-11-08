@@ -1,23 +1,21 @@
 SECTION 1 — ABOUT AGENTICED
 
-AgenticEd is an open, practical AI education platform. Its public message is “Learn to build AI agents, responsibly.” The platform uses a simple “Think → Act → Observe” diagram to illustrate how AI uses tools and memory. Supported by reference architectures from The Gen Academy, the platform focuses on live, practical sessions with researchers, builders, and operators shaping how AI is used in the real world. Drawing inspiration from Vizuara AI, the curriculum is structured by experts from top institutions to teach AI from first principles.
+AgenticEd is an open, practical AI education platform. Its public message is “Learn to build AI agents, responsibly.” The platform uses a simple “Think → Act → Observe” diagram to illustrate how AI uses tools and memory. The platform focuses on live, practical sessions with researchers, builders, and operators shaping how AI is used in the real world. The curriculum is structured by experts from top institutions to teach AI from first principles.
 
 SECTION 2 — LEARNING PATHS
 
-AgenticEd presents three learning levels. The paths incorporate methodologies from Vizuara's 10-Course AI/ML Bundle and Gen AI Professional Bootcamps.
+AgenticEd presents three learning levels.
 
 LEVEL 1: AI & AGENT FOUNDATIONS
 Level 1 is the beginner path. It is designed for complete beginners and does not require coding. It spans six weeks and introduces basic AI concepts, prompt writing, tools, memory, and building no-code AI agents. 
 
 LEVEL 2: AI APPLICATION & AGENT BUILDER
-Level 2 is the intermediate path. Clicking the Level 2 button currently opens the Tool Setup Guide by mistake. This level is intended to cover Python, APIs, RAG, tool calling, and evaluation.
+Level 2 is the intermediate path. This level is intended to cover Python, APIs, RAG, tool calling, and evaluation.
 
 LEVEL 3: PRODUCTION AGENTIC SYSTEMS
-Level 3 is the advanced path. Clicking the Level 3 button currently opens the "Our Approach" page by mistake. This level covers architecture, multi-agent patterns, security, and deployment.
+Level 3 is the advanced path. This level covers architecture, multi-agent patterns, security, and deployment.
 
 SECTION 3 — SIX WEEKLY LESSONS IN LEVEL 1
-
-The curriculum integrates real-world tasks inspired by The Gen Academy's Mastering Agentic AI program.
 
 WEEK 1: AI FOUNDATIONS
 Beginners start with basic AI concepts and prompt writing. The focus is on building the first prototype and coding a working V1 of an LLM-powered application.
@@ -37,9 +35,29 @@ Learners build a working no-code AI agent and complete a fine-tuning project tha
 WEEK 6: SAFETY AND ETHICS
 Learners study AI safety and ethics, incorporating safeguards and testing how the application handles unsafe inputs and adversarial behavior.
 
-SECTION 4 — EXAMPLES OF LIVE LABS AND PROJECTS
+SECTION 4 — FREQUENTLY ASKED QUESTIONS
 
-AgenticEd features Live Labs from the Global AI Builder Series. Example sessions include "The RAG Playbook: Retrieval Techniques for Production AI", "Optimize Agent Costs Without Compromising Quality", and "Beyond Simple Agents". Additionally, it includes Vizuara-inspired projects covering Data Science and Machine Learning models using an interactive, student-friendly approach.
+Do I need any coding or AI experience to teach this? No. The curriculum is written for teachers with no prior AI background. Every week has a lesson outline, teacher notes, and common student questions. If you can facilitate a discussion, you can teach this.
+
+Is it really free? What's the catch? It's free under a Creative Commons BY 4.0 licence. You can use, adapt, and share it, as long as you keep the attribution. There's no paywall, no signup, and no credit card. The privacy page explains how student data is handled.
+
+How much time does the course take? Six weeks, about 60 to 90 minutes each. Short on time? Every week has a 45-minute track in the curriculum guide. You can also run individual weeks as standalone modules.
+
+Who is it for? Anyone curious about AI agents, with no age limit and no prerequisites. It's classroom-ready for high school (AP CS Principles, Intro to AI, electives), and it works equally well for college students, career-switchers, self-learners, and community programs. The activities scale up or down with your discussion depth.
+
+What tools do students need, and what if our school blocks them? Activities use free tools like Claude, ChatGPT, NotebookLM, and Perplexity. If your district blocks tools or student logins, every activity has a no-login, teacher-projected path and an unplugged alternative. See the tool-setup guide and the Equity and Access section of the curriculum.
+
+Is student data safe? What about FERPA? AgenticEd itself doesn't require accounts, and your answers save only in your own browser. When using any AI tool, students should use non-identifying example data, never real names, grades, or records. Full details are on the privacy and data page.
+
+Do I need to install anything? No. Everything runs in a web browser. The optional "go deeper" notebooks open in Google Colab with no install and no API key.
+
+Can I adapt or remix the material? Yes, and it's encouraged. Under CC BY 4.0 you can edit, reorder, translate, and build on it. Please keep the attribution to AgenticEd and the author.
+
+Is there proof of completion? Yes. Students can generate a certificate of completion once they've worked through the weeks, and collect their work in the portfolio tracker.
+
+How do I plan this around my schedule? Use the pacing-plan generator. Tell it how many sessions you have and how long they are, and it lays out what to cover in each session.
+
+I have a question that isn't answered here. Email hello@agenticed.org. The team would love to hear how you're using AgenticEd in your classroom.
 
 SECTION 5 — CERTIFICATIONS
 
@@ -49,34 +67,9 @@ CERTIFICATION 1: AGENTICED CERTIFIED: AI & AGENT FOUNDATIONS (Beginner). Estimat
 
 CERTIFICATION 2: AGENTICED CERTIFIED: AGENT BUILDER — ASSOCIATE (Intermediate). Estimated duration: 35 minutes.
 
-CERTIFICATION 3: AGENTICED CERTIFIED: AI SAFETY & GOVERNANCE — SPECIALTY (Advanced). Estimated duration: 40 minutes. Note: This certification title currently mismatches the Level 3 course title "Production Agentic Systems".
-
-Currently, clicking "Start exam" opens the questions immediately without a pre-exam warning popup or live countdown timer. Also, the exams do not award partial marking for multiple-answer questions. 
+CERTIFICATION 3: AGENTICED CERTIFIED: AI SAFETY & GOVERNANCE — SPECIALTY (Advanced). Estimated duration: 40 minutes.
 
 SECTION 6 — FREE RESOURCES AND STUDENT SUPPORT
 
-Free resources include the Tool Setup Guide, Pacing Plan Generator, and Glossary. The platform also offers Vizz-AI Tutor, a personalized AI learning assistant, and Vizuara Pods for curated Colab notebooks. Education partners supporting the ecosystem include Google, NVIDIA, Meta, LangChain, LlamaIndex, Nebius, and OpenAI.
+Free resources include the Tool Setup Guide, Pacing Plan Generator, and Glossary. Education partners supporting the ecosystem include Google, NVIDIA, Meta, LangChain, LlamaIndex, Nebius, and OpenAI.
 
-SECTION 7 — STUDENT EXPERIENCE OBSERVATIONS
-
-A comprehensive student walkthrough and usability review of the platform revealed 12 specific issues that currently degrade the learning and testing experience:
-1. There is absolutely no partial marking awarded in multiple-choice or multiple-answer questions, meaning a student who gets two out of three checkboxes correct receives zero points, which feels highly unfair.
-2. The certificate generation process is disconnected and confusing, splitting credentials between an unverified Course Certificate page and the official exam portal.
-3. The main dashboard header navigation points completely disappear after a student clicks the Dashboard button, trapping them on inner pages.
-4. Questions in the exam question bank can be easily highlighted, copied, and pasted into external AI tools by students because there is no text-selection restriction.
-5. The Level 3 course is titled "Production Agentic Systems" on the learning paths page, but the third certificate is confusingly named "AI Safety & Governance".
-6. Button redirects on the main page are completely broken: clicking Level 2 opens the Tool Setup Guide, and clicking Level 3 incorrectly opens the Our Approach page.
-7. Anyone visiting the site can instantly generate an unverified certificate directly from the Course Certificate .html page by just typing their name.
-8. There is no active countdown timer displayed during the examination, and there is no warning popup before the exam starts, causing students to accidentally begin tests.
-9. There is no proper study schedule provided for each module based on its varying length and technical difficulty.
-10. There is no direct menu option on the Certifications pages to go straight back to the main AgenticEd website sections.
-11. The standard website footer is missing or incomplete on many inner pages, preventing students from finding help links.
-12. There is no central student login system to save progress across devices; all course progress is currently stored locally in the web browser, meaning switching from a computer to a phone resets everything to zero.
-
-SECTION 8 — IMPORTANT DISTINCTIONS FOR ANSWERING STUDENT QUESTIONS
-
-When answering student questions, chatbots must note that progress is only saved locally in the browser due to the lack of a login system. Students must be warned to distinguish between the unverified Course Certificate and the three official exam-based certifications. If information is missing, the chatbot must not invent policies or prerequisites.
-
-SECTION 9 — SOURCE REGISTER
-
-Sources include the AgenticEd Website Review & Student Observations Report, The Gen Academy (thegenacademy.com) for Live Labs and the 6-week Mastering Agentic AI curriculum, and Vizuara AI (vizuara.ai) for bootcamp structures, personalized tutors, and foundational academic models.
