@@ -285,3 +285,20 @@ Contributions are welcome for resources, explanations, notebooks, datasets, eval
 - Use the issue templates for bugs, resource suggestions, notebook/project proposals, and datasets. Pull requests include a review checklist.
 
 For a resource suggestion, provide the original link, what readers will learn, the relevant RAG stage, and any access requirements or affiliation. Listings are learning references, not rankings or endorsements.
+
+
+## Week 2: RAG Content Preparation
+
+This week's module demonstrates how to prepare and chunk text for a Retrieval-Augmented Generation (RAG) system using AgenticEd course data.
+
+### Files Included
+* `data/agenticed_content.txt`: The source text containing 9 sections of AgenticEd curriculum and platform details.
+* `notebooks/chunking/week2_assignment.ipynb`: The main notebook demonstrating Fixed-Size, Sentence-Based, and Paragraph-Based chunking.
+
+### How to Run
+1. Open a terminal and ensure you are in the `Awesome-RAG` root directory.
+2. (Optional) Activate your Python virtual environment if you are using one.
+3. Launch Jupyter Notebook or open the project in VS Code:
+   ```bash
+   jupyter notebook
+   
