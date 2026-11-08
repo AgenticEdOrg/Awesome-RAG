@@ -35,6 +35,30 @@ Learners build a working no-code AI agent and complete a fine-tuning project tha
 WEEK 6: SAFETY AND ETHICS
 Learners study AI safety and ethics, incorporating safeguards and testing how the application handles unsafe inputs and adversarial behavior.
 
+SECTION 4 — FREQUENTLY ASKED QUESTIONS
+
+Do I need any coding or AI experience to teach this? No. The curriculum is written for teachers with no prior AI background. Every week has a lesson outline, teacher notes, and common student questions. If you can facilitate a discussion, you can teach this.
+
+Is it really free? What's the catch? It's free under a Creative Commons BY 4.0 licence. You can use, adapt, and share it, as long as you keep the attribution. There's no paywall, no signup, and no credit card. The privacy page explains how student data is handled.
+
+How much time does the course take? Six weeks, about 60 to 90 minutes each. Short on time? Every week has a 45-minute track in the curriculum guide. You can also run individual weeks as standalone modules.
+
+Who is it for? Anyone curious about AI agents, with no age limit and no prerequisites. It's classroom-ready for high school (AP CS Principles, Intro to AI, electives), and it works equally well for college students, career-switchers, self-learners, and community programs. The activities scale up or down with your discussion depth.
+
+What tools do students need, and what if our school blocks them? Activities use free tools like Claude, ChatGPT, NotebookLM, and Perplexity. If your district blocks tools or student logins, every activity has a no-login, teacher-projected path and an unplugged alternative. See the tool-setup guide and the Equity and Access section of the curriculum.
+
+Is student data safe? What about FERPA? AgenticEd itself doesn't require accounts, and your answers save only in your own browser. When using any AI tool, students should use non-identifying example data, never real names, grades, or records. Full details are on the privacy and data page.
+
+Do I need to install anything? No. Everything runs in a web browser. The optional "go deeper" notebooks open in Google Colab with no install and no API key.
+
+Can I adapt or remix the material? Yes, and it's encouraged. Under CC BY 4.0 you can edit, reorder, translate, and build on it. Please keep the attribution to AgenticEd and the author.
+
+Is there proof of completion? Yes. Students can generate a certificate of completion once they've worked through the weeks, and collect their work in the portfolio tracker.
+
+How do I plan this around my schedule? Use the pacing-plan generator. Tell it how many sessions you have and how long they are, and it lays out what to cover in each session.
+
+I have a question that isn't answered here. Email hello@agenticed.org. The team would love to hear how you're using AgenticEd in your classroom.
+
 SECTION 5 — CERTIFICATIONS
 
 AgenticEd offers three verified certification tiers, each requiring a 20-question exam with a 70% passing score.

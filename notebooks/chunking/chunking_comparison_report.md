@@ -1,7 +1,7 @@
 # AgenticEd: RAG Chunking Comparison Report
 
 ### Overview
-This report documents three text-chunking strategies (**Fixed-Size**, **Sentence-Based**, and **Paragraph-Based**) applied to the AgenticEd course content (`agenticed_content.txt`). Effective chunking preserves context for downstream Retrieval-Augmented Generation (RAG) systems.
+This report compares three text-chunking strategies (**Fixed-Size**, **Sentence-Based**, and **Paragraph-Based**) on the AgenticEd sample content (`agenticed_content.txt`). Good chunking keeps context intact for downstream Retrieval-Augmented Generation (RAG) systems.
 
 ---
 
@@ -9,19 +9,22 @@ This report documents three text-chunking strategies (**Fixed-Size**, **Sentence
 
 | Strategy | Total Chunks | Min Words | Max Words | Avg Words | Sections Split |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Fixed-Size Chunking** | 5 | 26 | 139 | 77.4 | None |
-| **Sentence-Based Chunking** | 5 | 26 | 139 | 77.4 | None |
-| **Paragraph-Based Chunking** | 5 | 26 | 139 | 77.4 | None |
+| **Fixed-Size Chunking** | 8 | 26 | 180 | 101.9 | Section 4, mid-sentence |
+| **Sentence-Based Chunking** | 8 | 26 | 179 | 101.9 | Section 4, between sentences |
+| **Paragraph-Based Chunking** | 8 | 26 | 152 | 101.9 | Section 4, between paragraphs |
 
-The file has 5 sections, and each section is under the 180-word budget. Each method therefore produces one chunk per section, and the three outputs are identical.
+The file has 6 sections. Five are shorter than the 180-word budget, so each becomes one chunk. Section 4 (the FAQ, 428 words) is longer, so each method splits it into three chunks.
 
 ---
 
 ### Key Observations from the Experiments
 
-1. **The three methods only differ for long sections.** Every section in this file is shorter than the 180-word budget (the longest is Section 3 at 139 words), so no method has to split anything. Adding a section longer than 180 words would show the differences: fixed-size chunking would cut mid-sentence, sentence-based chunking would keep sentences whole, and paragraph-based chunking would keep paragraphs whole unless a paragraph exceeds the budget.
+1. **Fixed-size chunking cuts sentences.** Section 4 is split at exactly 180 words. That falls mid-sentence twice: "...with your discussion" / "depth." and "...they've worked" / "through the weeks...".
 
-2. **Which method is best for an AgenticEd Chatbot?**
-   * For this file, the output is identical, so no method is better.
-   * For general retrieval, **sentence-based chunking with a soft word budget** is the safest choice. It never cuts a sentence and keeps chunks under the budget.
-   * For sections where line breaks or lists matter, such as Section 2's learning levels and Section 3's six weekly lessons, **paragraph-based chunking** keeps that layout intact.
+2. **Sentence-based chunking keeps sentences whole.** Every break falls between sentences, and every chunk stays under the 180-word budget.
+
+3. **Paragraph-based chunking keeps paragraphs whole.** Section 4 becomes three chunks of 130, 152, and 146 words, each holding one or more complete question-and-answer pairs.
+
+4. **Which method is best for an AgenticEd Chatbot?**
+   * **Sentence-based chunking with a soft word budget** is the best overall choice for this file. It never cuts a sentence and keeps chunks under the budget.
+   * **Paragraph-based chunking** keeps each question and answer together, which suits FAQ-style content.

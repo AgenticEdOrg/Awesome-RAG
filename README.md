@@ -292,7 +292,7 @@ For a resource suggestion, provide the original link, what readers will learn, t
 This week's module demonstrates how to prepare and chunk text for a Retrieval-Augmented Generation (RAG) system using AgenticEd course data.
 
 ### Files Included
-* `data/agenticed_content.txt`: The source text containing 5 sections of AgenticEd curriculum and platform details.
+* `data/agenticed_content.txt`: The source text containing 6 sections of AgenticEd curriculum and platform details.
 * `notebooks/chunking/week2_assignment.ipynb`: The main notebook demonstrating Fixed-Size, Sentence-Based, and Paragraph-Based chunking.
 
 ### How to Run
