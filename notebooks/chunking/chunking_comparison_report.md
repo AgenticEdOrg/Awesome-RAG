@@ -18,9 +18,9 @@ This report documents the implementation and evaluation of three distinct text-c
 ### Key Observations from the Experiments
 
 1. **Boundary Preservation vs. Strict Sizing**:
-   * **Fixed-size chunking** enforces a rigid word ceiling (180 words), but at the cost of splitting thoughts across chunk boundaries[cite: 6, 10]. For example, in Section 7, the text was cut mid-sentence between `fixed-7` (ending with `"7. Anyone visiting the"`) and `fixed-8` (starting with `"site can instantly generate an unverified certificate..."`)[cite: 10].
-   * **Sentence-based chunking** successfully resolved mid-sentence clipping by respecting grammatical punctuation (`.`, `!`, `?`), keeping every chunk safely under the 180-word soft budget (max: 177 words)[cite: 8, 10].
-   * **Paragraph-based chunking** preserved topical unity and structural layout using double newline delimiters (`\n\n`), but resulted in an outlier in Section 7 (321 words) because the section was written as a single continuous block without blank lines[cite: 8, 10].
+   * **Fixed-size chunking** enforces a rigid word ceiling (180 words), but at the cost of splitting thoughts across chunk boundaries. For example, in Section 7, the text was cut mid-sentence between `fixed-7` (ending with `"7. Anyone visiting the"`) and `fixed-8` (starting with `"site can instantly generate an unverified certificate..."`).
+   * **Sentence-based chunking** successfully resolved mid-sentence clipping by respecting grammatical punctuation (`.`, `!`, `?`), keeping every chunk safely under the 180-word soft budget (max: 177 words).
+   * **Paragraph-based chunking** preserved topical unity and structural layout using double newline delimiters (`\n\n`), but resulted in an outlier in Section 7 (321 words) because the section was written as a single continuous block without blank lines.
 
 2. **Which method is best for an AgenticEd Chatbot?**
    * **Sentence-based chunking with a soft word budget** provides the best overall balance for general retrieval. It guarantees that retrieved context contains grammatically complete sentences without risking oversized outliers that exceed LLM context windows.

@@ -301,4 +301,4 @@ This week's module demonstrates how to prepare and chunk text for a Retrieval-Au
 3. Launch Jupyter Notebook or open the project in VS Code:
    ```bash
    jupyter notebook
-   
+   ```
