@@ -1,10 +1,10 @@
 SECTION 1 — ABOUT AGENTICED
 
-AgenticEd is an open, practical AI education platform. Its public message is “Learn to build AI agents, responsibly.” The platform uses a simple “Think → Act → Observe” diagram to illustrate how AI uses tools and memory. Supported by reference architectures from The Gen Academy, the platform focuses on live, practical sessions with researchers, builders, and operators shaping how AI is used in the real world. Drawing inspiration from Vizuara AI, the curriculum is structured by experts from top institutions to teach AI from first principles.
+AgenticEd is an open, practical AI education platform. Its public message is “Learn to build AI agents, responsibly.” The platform uses a simple “Think → Act → Observe” diagram to illustrate how AI uses tools and memory. The platform focuses on live, practical sessions with researchers, builders, and operators shaping how AI is used in the real world. The curriculum is structured by experts from top institutions to teach AI from first principles.
 
 SECTION 2 — LEARNING PATHS
 
-AgenticEd presents three learning levels. The paths incorporate methodologies from Vizuara's 10-Course AI/ML Bundle and Gen AI Professional Bootcamps.
+AgenticEd presents three learning levels.
 
 LEVEL 1: AI & AGENT FOUNDATIONS
 Level 1 is the beginner path. It is designed for complete beginners and does not require coding. It spans six weeks and introduces basic AI concepts, prompt writing, tools, memory, and building no-code AI agents. 
@@ -16,8 +16,6 @@ LEVEL 3: PRODUCTION AGENTIC SYSTEMS
 Level 3 is the advanced path. This level covers architecture, multi-agent patterns, security, and deployment.
 
 SECTION 3 — SIX WEEKLY LESSONS IN LEVEL 1
-
-The curriculum integrates real-world tasks inspired by The Gen Academy's Mastering Agentic AI program.
 
 WEEK 1: AI FOUNDATIONS
 Beginners start with basic AI concepts and prompt writing. The focus is on building the first prototype and coding a working V1 of an LLM-powered application.
@@ -37,10 +35,6 @@ Learners build a working no-code AI agent and complete a fine-tuning project tha
 WEEK 6: SAFETY AND ETHICS
 Learners study AI safety and ethics, incorporating safeguards and testing how the application handles unsafe inputs and adversarial behavior.
 
-SECTION 4 — EXAMPLES OF LIVE LABS AND PROJECTS
-
-AgenticEd features Live Labs from the Global AI Builder Series. Example sessions include "The RAG Playbook: Retrieval Techniques for Production AI", "Optimize Agent Costs Without Compromising Quality", and "Beyond Simple Agents". Additionally, it includes Vizuara-inspired projects covering Data Science and Machine Learning models using an interactive, student-friendly approach.
-
 SECTION 5 — CERTIFICATIONS
 
 AgenticEd offers three verified certification tiers, each requiring a 20-question exam with a 70% passing score.
@@ -53,8 +47,5 @@ CERTIFICATION 3: AGENTICED CERTIFIED: AI SAFETY & GOVERNANCE — SPECIALTY (Adva
 
 SECTION 6 — FREE RESOURCES AND STUDENT SUPPORT
 
-Free resources include the Tool Setup Guide, Pacing Plan Generator, and Glossary. The platform also offers Vizz-AI Tutor, a personalized AI learning assistant, and Vizuara Pods for curated Colab notebooks. Education partners supporting the ecosystem include Google, NVIDIA, Meta, LangChain, LlamaIndex, Nebius, and OpenAI.
+Free resources include the Tool Setup Guide, Pacing Plan Generator, and Glossary. Education partners supporting the ecosystem include Google, NVIDIA, Meta, LangChain, LlamaIndex, Nebius, and OpenAI.
 
-SECTION 9 — SOURCE REGISTER
-
-Sources include The Gen Academy (thegenacademy.com) for Live Labs and the 6-week Mastering Agentic AI curriculum, and Vizuara AI (vizuara.ai) for bootcamp structures, personalized tutors, and foundational academic models.

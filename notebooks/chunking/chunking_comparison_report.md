@@ -9,17 +9,17 @@ This report documents three text-chunking strategies (**Fixed-Size**, **Sentence
 
 | Strategy | Total Chunks | Min Words | Max Words | Avg Words | Sections Split |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Fixed-Size Chunking** | 7 | 29 | 153 | 74.7 | None |
-| **Sentence-Based Chunking** | 7 | 29 | 153 | 74.7 | None |
-| **Paragraph-Based Chunking** | 7 | 29 | 153 | 74.7 | None |
+| **Fixed-Size Chunking** | 5 | 26 | 139 | 77.4 | None |
+| **Sentence-Based Chunking** | 5 | 26 | 139 | 77.4 | None |
+| **Paragraph-Based Chunking** | 5 | 26 | 139 | 77.4 | None |
 
-The file has 7 sections, and each section is under the 180-word budget. Each method therefore produces one chunk per section, and the three outputs are identical.
+The file has 5 sections, and each section is under the 180-word budget. Each method therefore produces one chunk per section, and the three outputs are identical.
 
 ---
 
 ### Key Observations from the Experiments
 
-1. **The three methods only differ for long sections.** Every section in this file is shorter than the 180-word budget (the longest is Section 3 at 153 words), so no method has to split anything. Adding a section longer than 180 words would show the differences: fixed-size chunking would cut mid-sentence, sentence-based chunking would keep sentences whole, and paragraph-based chunking would keep paragraphs whole unless a paragraph exceeds the budget.
+1. **The three methods only differ for long sections.** Every section in this file is shorter than the 180-word budget (the longest is Section 3 at 139 words), so no method has to split anything. Adding a section longer than 180 words would show the differences: fixed-size chunking would cut mid-sentence, sentence-based chunking would keep sentences whole, and paragraph-based chunking would keep paragraphs whole unless a paragraph exceeds the budget.
 
 2. **Which method is best for an AgenticEd Chatbot?**
    * For this file, the output is identical, so no method is better.
